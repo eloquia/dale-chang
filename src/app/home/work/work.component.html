@@ -1,0 +1,22 @@
+<div class="p-8 flex flex-col justify-center items-center">
+  <article class="p-4" *ngFor="let workHistory of workHistories">
+    <h2 class="text-xl font-bold">{{ workHistory.jobTitle }}</h2>
+    <h3>{{ workHistory.companyName }}</h3>
+    <h3>@ {{ workHistory.location }}</h3>
+    <span>{{ workHistory.startDate }} - {{workHistory.endDate }}</span>
+
+    <section class="p-4">
+      <p class="font-bold">Description</p>
+      <p>{{ workHistory.jobDescription }}</p>
+    </section>
+
+    <section class="p-4">
+      <p class="font-bold">Responsibilities</p>
+      <ul class="list-inside">
+        <li *ngFor="let reponsibility of workHistory.responsibilities">
+          {{ reponsibility }}
+        </li>
+      </ul>
+    </section>
+  </article>
+</div>

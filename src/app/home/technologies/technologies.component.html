@@ -1,0 +1,33 @@
+<div class="p-8 my-32 flex flex-col items-center justify-center gap-4">
+  <h1 class="text-2xl">Technologies</h1>
+
+  <article class="p-4 flex flex-col items-center gap-3">
+    <h2 class="font-bold mb-4">Current</h2>
+
+    <div class="grid grid-cols-3">
+      <section class="flex flex-col gap-4" *ngFor="let technologyGroup of currentTechnologyGroups">
+        <h3 class="italic">{{ technologyGroup.groupName }}</h3>
+        <ul class="list-inside list-disc">
+          <li *ngFor="let technology of technologyGroup.technologyNames">
+            {{ technology }}
+          </li>
+        </ul>
+      </section>
+    </div>
+  </article>
+
+  <article class="p-4 flex flex-col items-center gap-3">
+    <h2 class="font-bold mb-4">Past</h2>
+
+    <div class="grid grid-cols-3 gap-4">
+      <section class="flex flex-col gap-2" *ngFor="let technologyGroup of pastTechnologyGroups">
+        <h3 class="italic">{{ technologyGroup.groupName }}</h3>
+        <ul class="list-inside list-disc">
+          <li *ngFor="let technology of technologyGroup.technologyNames">
+            {{ technology }}
+          </li>
+        </ul>
+      </section>
+    </div>
+  </article>
+</div>
