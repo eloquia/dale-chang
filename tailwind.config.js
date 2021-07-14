@@ -807,34 +807,6 @@ module.exports = {
       50: '50',
     },
   },
-  extend: {
-    typography: (theme) => ({
-      DEFAULT: {
-        css: {
-          color: theme('colors.gray.100'),
-          backgroundColor: theme('colors.gray.900'),
-          h1: {
-            color: theme('colors.gray.100'),
-          },
-          h2: {
-            color: theme('colors.gray.100'),
-          },
-          h3: {
-            color: theme('colors.gray.100'),
-          },
-          h4: {
-            color: theme('colors.gray.100'),
-          },
-          h5: {
-            color: theme('colors.gray.100'),
-          },
-          h6: {
-            color: theme('colors.gray.100'),
-          }
-        }
-      }
-    })
-  },
   variantOrder: [
     'first',
     'last',

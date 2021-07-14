@@ -1,7 +1,12 @@
-<div>
-  <h2>Certifications</h2>
+<div class="my-32 flex flex-col justify-center items-center gap-4">
+  <h2 class="text-2xl">Certifications</h2>
 
-  <ul>
-    <li>AWS Certified Developer - Associate<span> @ Jul 2021</span></li>
-  </ul>
+  <div class="certifications flex flex-col gap-4">
+    <div
+        class="certification flex gap-2"
+        *ngFor="let certification of certifications">
+      <span>{{ certification.name }}</span>
+      <span> @ {{ certification.dateAchieved | date:'MMM yyyy' }}</span>
+    </div>
+  </div>
 </div>
