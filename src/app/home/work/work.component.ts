@@ -8,6 +8,7 @@ interface WorkHistory {
   endDate: string;
   jobDescription: string;
   responsibilities: string[];
+  color: string;
 }
 
 @Component({
@@ -22,20 +23,21 @@ export class WorkComponent implements OnInit {
       companyName: 'Cigna/Evernorth Health Services',
       location: 'Denver, CO & Remote',
       startDate: 'Feb 2019',
-      endDate: 'Current',
+      endDate: 'Now',
       jobDescription:
-        'At Cigna+Evernorth, I develop platforms for insurance and finance.',
+        'At Cigna+Evernorth, I develop platforms intersecting insurance and finance.',
       responsibilities: [
         'Enhance a platform enabling users to analyze financial trends in insurance claims.',
         'Develop tools and dashboard widgets for generating and exporting financial reports.',
       ],
+      color: 'bg-blizzard-blue',
     },
     {
       jobTitle: 'Principal',
       companyName: 'Eloquia Technologies',
       location: 'Remote',
       startDate: 'Aug 2020',
-      endDate: 'Current',
+      endDate: 'Now',
       jobDescription:
         'Founder of Eloquia Technologies, a consulting company dedicated to changing lives through innovative solutions.',
       responsibilities: [
@@ -43,6 +45,7 @@ export class WorkComponent implements OnInit {
         'Mentor budding student interns on industry-standards for cutting-edge academic research.',
         'Design solutions to help lab researchers become more effective at managing diverse workloads.',
       ],
+      color: 'bg-sky-blue-crayola',
     },
     {
       jobTitle: 'Data Engineer',
@@ -57,6 +60,7 @@ export class WorkComponent implements OnInit {
         "Design solutions to enhance the platform to solve clients' problems",
         'Create dashboards and graph widgets for summary and drill-down capabilities',
       ],
+      color: 'bg-cerulean-crayola',
     },
     {
       jobTitle: 'Software Engineer & NLP Analyst',
@@ -71,6 +75,7 @@ export class WorkComponent implements OnInit {
         'Architected a human-in-the-loop machine learning module for classifying text documents',
         'Designed a system for auditing role-based changes',
       ],
+      color: 'bg-blizzard-blue',
     },
   ];
 

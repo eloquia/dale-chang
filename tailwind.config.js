@@ -29,6 +29,24 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+
+      // custom colors
+      'navy-blue': '#03045E',
+      'dark-cornflower-blue': '#023E8A',
+      'star-command-blue': '#0077B6',
+      'blue-green': '#0096C7',
+      'cerulean-crayola': '#00B4D8',
+      'sky-blue-crayola': '#48CAE4',
+      'sky-blue-crayola-light': '#90E0EF',
+      'blizzard-blue': '#ADE8F4',
+      'powder-blue': '#CAF0F8',
+
+      'light-coral': '#F28482',
+      'morning-blue': '#84A59D',
+      'baby-pink': '#F5CAC3',
+      linen: '#F7EDE2',
+      'maximum-yellow-red': '#F6BD60',
+      'dark-slate-gray': '#3D524D',
     },
     spacing: {
       px: '1px',

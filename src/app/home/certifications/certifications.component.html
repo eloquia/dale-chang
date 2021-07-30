@@ -1,12 +1,12 @@
-<div class="my-32 flex flex-col justify-center items-center gap-4">
-  <h2 class="text-2xl">Certifications</h2>
+<div class="px-8 py-32 bg-linen flex flex-col justify-center items-center">
+  <h2 class="my-8 text-2xl">Certifications</h2>
 
-  <div class="certifications flex flex-col gap-4">
+  <div class="certifications flex flex-col">
     <div
-        class="certification flex gap-2"
+        class="certification py-8 flex flex-col"
         *ngFor="let certification of certifications">
-      <span>{{ certification.name }}</span>
-      <span> @ {{ certification.dateAchieved | date:'MMM yyyy' }}</span>
+      <span class="font-bold">{{ certification.name }}</span>
+      <span>{{ certification.dateAchieved | date:'MMM yyyy' }}</span>
     </div>
   </div>
 </div>

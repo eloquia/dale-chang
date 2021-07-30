@@ -1,6 +1,19 @@
-<app-intro></app-intro>
-<app-about></app-about>
-<app-work></app-work>
-<app-certifications></app-certifications>
-<app-technologies></app-technologies>
-<app-outside-work></app-outside-work>
+<div class="home flex">
+  <div class="home-content">
+    <app-intro></app-intro>
+    <app-about></app-about>
+    <app-work></app-work>
+    <app-certifications></app-certifications>
+    <app-technologies></app-technologies>
+    <app-outside-work></app-outside-work>
+  </div>
+  <div class="home-nav pr-2 fixed right-0 top-1/2 hidden md:flex">
+    <nav class="flex flex-col items-end">
+      <a class="hover:mr-2">About</a>
+      <a class="">Work</a>
+      <a class="">Certifications</a>
+      <a class="">Technologies</a>
+      <a class="">Outside</a>
+    </nav>
+  </div>
+</div>
