@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-outside-work',
   templateUrl: './outside-work.component.html',
-  styleUrls: ['./outside-work.component.scss']
+  styleUrls: ['./outside-work.component.scss'],
 })
-export class OutsideWorkComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class OutsideWorkComponent {
+  constructor() {}
 }

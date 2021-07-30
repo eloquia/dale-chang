@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-cigna',
   templateUrl: './cigna.component.html',
-  styleUrls: ['./cigna.component.scss']
+  styleUrls: ['./cigna.component.scss'],
 })
-export class CignaComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class CignaComponent {
+  constructor() {}
 }

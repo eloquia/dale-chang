@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 interface Certification {
   id?: number;
@@ -11,7 +11,7 @@ interface Certification {
   templateUrl: './certifications.component.html',
   styleUrls: ['./certifications.component.scss'],
 })
-export class CertificationsComponent implements OnInit {
+export class CertificationsComponent {
   certifications: Certification[] = [
     {
       name: 'AWS Certified Developer - Associate',
@@ -20,6 +20,4 @@ export class CertificationsComponent implements OnInit {
   ];
 
   constructor() {}
-
-  ngOnInit(): void {}
 }

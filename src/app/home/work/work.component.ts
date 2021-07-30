@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 interface WorkHistory {
   jobTitle: string;
@@ -16,7 +16,7 @@ interface WorkHistory {
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss'],
 })
-export class WorkComponent implements OnInit {
+export class WorkComponent {
   workHistories: WorkHistory[] = [
     {
       jobTitle: 'Software Engineering Sr. Advisor',
@@ -80,6 +80,4 @@ export class WorkComponent implements OnInit {
   ];
 
   constructor() {}
-
-  ngOnInit(): void {}
 }

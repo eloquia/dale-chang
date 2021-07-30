@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 interface TechnologyGroup {
   groupName: string;
@@ -10,7 +10,7 @@ interface TechnologyGroup {
   templateUrl: './technologies.component.html',
   styleUrls: ['./technologies.component.scss'],
 })
-export class TechnologiesComponent implements OnInit {
+export class TechnologiesComponent {
   currentTechnologyGroups: TechnologyGroup[] = [
     {
       groupName: 'Front-end',
@@ -71,6 +71,4 @@ export class TechnologiesComponent implements OnInit {
   ];
 
   constructor() {}
-
-  ngOnInit(): void {}
 }

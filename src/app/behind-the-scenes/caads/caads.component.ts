@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-caads',
   templateUrl: './caads.component.html',
-  styleUrls: ['./caads.component.scss']
+  styleUrls: ['./caads.component.scss'],
 })
-export class CaadsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class CaadsComponent {
+  constructor() {}
 }
